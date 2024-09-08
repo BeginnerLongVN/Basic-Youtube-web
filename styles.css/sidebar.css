@@ -1,0 +1,29 @@
+.sidebar {
+  background-color: white;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  width: 60px;
+  z-index: 101;
+  padding-top: 10px;
+}
+.icon {
+  height: 22px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.side-icon {
+  display: grid;
+  row-gap: 3px;
+  font-size: 9px;
+  text-align: center;
+  color: black;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.side-icon:hover {
+  background-color: rgba(226, 210, 210, 0.74);
+}

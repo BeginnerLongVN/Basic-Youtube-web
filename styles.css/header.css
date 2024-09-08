@@ -1,0 +1,155 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  left: 0;
+  right: 0;
+  border-bottom-color: rgb(189, 179, 179);
+  border-bottom-style: solid;
+  border-width: 1px;
+  z-index: 100;
+}
+.left-section {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.left-icon {
+  height: 22px;
+  margin-left: 22px;
+  cursor: pointer;
+}
+.middle-section {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 30px;
+  flex: 1;
+  max-width: 500px;
+}
+.search-bar {
+  flex: 1;
+  height: 36px;
+  border-radius: 2px; 
+  box-shadow: inset 0px 0px 2px rgba(0,0,0,0.2);
+  border-color: rgb(192,192,192);
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
+  font-size: 16px;
+  width: 0;
+}
+.search-bar::placeholder {
+  font-size: 16px;
+  color: rgb(94, 94, 94);
+  font-weight: 450;
+}
+.search-icon {
+  height: 25px;
+}
+.voice-search-icon {
+  height: 25px;
+}
+.search-button {
+  height: 38px;
+  width: 68px;
+  border: 1px solid lightgray;
+  margin-left: -1px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  position: absolute;
+  text-align: center;
+  color: white;
+  padding: 10px 5px;
+  background-color: rgba(48, 48, 48, 0.808);
+  font-size: 14px;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: auto;
+  white-space: nowrap;
+  bottom: -50px;
+  pointer-events: none;
+}
+.search-button:hover .hidden {
+  opacity: 1;
+}
+
+.voice-search-button:hover .hidden {
+  opacity: 1;
+}
+.search-button:hover {
+  background-color: rgb(226, 219, 219);
+}
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 19px;
+  border: none;
+  margin-left: 7px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-section {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+.right-icon {
+  height: 25px;
+  cursor: pointer;
+}
+.icon-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.right-icon-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.right-icon-button:hover .hidden {
+  opacity: 1;
+}
+.icon-button:hover .hidden {
+  opacity: 1;
+}
+.notification-icon {
+  height: 25px;
+  cursor: pointer;
+}
+.number {
+  position: absolute;
+  font-size: 10px;
+  right: -2px;
+  top: 0;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.my-channel {
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
+}
+/* sdfasdfasdfasd*/ 
